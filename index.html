@@ -7,13 +7,13 @@
     <link rel="stylesheet" href="styles.css">
     <style>
         :root {
-            --primary-color: #2c3e50;
-            --secondary-color: #3498db;
+            --primary-color: #2C3E57;
+            --secondary-color: #242E57;
             --accent-color: #e74c3c;
             --success-color: #27ae60;
             --warning-color: #f39c12;
-            --teacher-color: #9b59b6;
-            --student-color: #3498db;
+            --teacher-color: #242E57;
+            --student-color: #FFFFFF;
         }
 
         * {
@@ -26,7 +26,7 @@
             font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
             line-height: 1.6;
             color: #333;
-            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            background-color: #f5f1e8;
             min-height: 100vh;
         }
 
@@ -35,8 +35,6 @@
             margin: 0 auto;
             padding: 0 20px;
         }
-
-        /* Модальные окна */
         .modal {
             display: none;
             position: fixed;
@@ -72,7 +70,6 @@
             color: #333;
         }
 
-        /* Формы */
         .form .group {
             margin-bottom: 20px;
         }
@@ -152,8 +149,6 @@
             background-color: var(--secondary-color);
             color: white;
         }
-
-        /* Выбор роли */
         .selection {
             display: flex;
             gap: 10px;
@@ -178,8 +173,6 @@
             border-color: var(--secondary-color);
             background-color: rgba(52, 152, 219, 0.1);
         }
-
-        /* Шапка */
         header {
             background-color: white;
             box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
@@ -197,11 +190,11 @@
 
         .logo h1 {
             font-size: 24px;
-            color: var(--primary-color);
+            color: #000000;
         }
 
         .logo span {
-            color: var(--accent-color);
+            color: #000000;
         }
 
         nav ul {
@@ -223,8 +216,6 @@
             color: var(--secondary-color);
             background-color: rgba(52, 152, 219, 0.1);
         }
-
-        /* Блок пользователя */
         .user .buttons {
             display: flex;
             gap: 10px;
@@ -312,8 +303,6 @@
             border-top: 1px solid #eee;
             margin: 5px 0;
         }
-
-        /* Основное содержимое */
         main {
             padding: 30px 0;
         }
@@ -323,8 +312,6 @@
             grid-template-columns: 250px 1fr;
             gap: 30px;
         }
-
-        /* Боковая панель */
         .sidebar {
             background-color: white;
             border-radius: 10px;
@@ -335,7 +322,7 @@
 
         .sidebar h2 {
             margin-bottom: 20px;
-            color: var(--primary-color);
+            color: #000000;
         }
 
         .topicslist {
@@ -370,8 +357,6 @@
             color: var(--secondary-color);
             font-weight: 500;
         }
-
-        /* Область контента */
         .area {
             display: flex;
             flex-direction: column;
@@ -403,7 +388,7 @@
         }
 
         .stats .card {
-            background-color: #f8f9fa;
+            background-color: #000000;
             padding: 15px;
             border-radius: 8px;
             text-align: center;
@@ -461,7 +446,6 @@
             font-size: 16px;
         }
 
-        /* Теория */
         .theory {
             background-color: white;
             border-radius: 10px;
@@ -483,7 +467,7 @@
         }
 
         .theorycontent h4 {
-            color: var(--secondary-color);
+            color:  #000000;
             margin: 20px 0 10px 0;
         }
 
@@ -505,8 +489,6 @@
             width: 100%;
             margin-top: 20px;
         }
-
-        /* Сетка подтем */
         .subtopicsgrid {
             display: grid;
             grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
@@ -521,7 +503,7 @@
             box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
             cursor: pointer;
             transition: transform 0.3s, box-shadow 0.3s;
-            border-left: 4px solid var(--secondary-color);
+            border-left: 4px solid  #242E57;
         }
 
         .subtopiccard:hover {
@@ -530,7 +512,7 @@
         }
 
         .subtopiccard h3 {
-            color: var(--primary-color);
+            color:  #242E57;
             margin-bottom: 10px;
         }
 
@@ -538,8 +520,6 @@
             color: #666;
             margin-bottom: 15px;
         }
-
-        /* Генератор заданий */
         .taskgeneratorcontainer {
             background-color: white;
             border-radius: 10px;
@@ -562,7 +542,7 @@
         }
 
         .taskcontent {
-            background-color: #f8f9fa;
+            background-color:  #242E57;
             border-radius: 8px;
             padding: 20px;
             margin-bottom: 20px;
@@ -675,8 +655,6 @@
             width: 0%;
             transition: width 0.5s ease;
         }
-
-        /* Уведомления */
         .notification {
             position: fixed;
             top: 20px;
@@ -711,10 +689,8 @@
                 opacity: 1;
             }
         }
-
-        /* Подвал */
         footer {
-            background-color: var(--primary-color);
+            background-color: 2C3E57;
             color: white;
             padding: 30px 0;
             margin-top: 50px;
@@ -729,8 +705,7 @@
         }
 
         .copyright p {
-            color: rgba(255, 255, 255, 0.8);
-            margin-bottom: 5px;
+            color: #FFFFFF 5px;
         }
 
         .links {
@@ -739,7 +714,7 @@
         }
 
         .links a {
-            color: rgba(255, 255, 255, 0.8);
+            color: #FFFFFF;
             text-decoration: none;
             transition: color 0.3s;
         }
@@ -748,7 +723,6 @@
             color: white;
         }
 
-        /* Адаптивность */
         @media (max-width: 1024px) {
             .dashboard {
                 grid-template-columns: 1fr;
@@ -1023,13 +997,11 @@
             </section>
         </div>
     </main>
-
-    <!-- Подвал -->
     <footer>
         <div class="container">
             <div class="footercontent">
                 <div class="copyright">
-                    <p>© 2026 Образовательная платформа "КиберБезопасность". Все права защищены.</p>
+                    <p>&copy; 2026 Образовательная платформа "КиберБезопасность". Все права защищены.</p>
                     <p>Материалы предназначены для образовательных целей.</p>
                 </div>
                 <div class="links">
@@ -1042,9 +1014,6 @@
     </footer>
 
     <script>
-        // =============== СИСТЕМА АККАУНТОВ ===============
-
-        // База данных пользователей
         const usersDatabase = {
             "teacher@school.ru": {
                 id: 1,
@@ -1099,12 +1068,7 @@
                 }
             }
         };
-
-        // Текущий пользователь
         let currentUser = null;
-
-        // =============== ДАННЫЕ ТЕОРИИ ===============
-
         const topicsTheoryData = {
             "1": {
                 title: "Безопасность информации",
@@ -3111,9 +3075,6 @@
                 }
             }
         };
-
-        // =============== ПЕРЕМЕННЫЕ СОСТОЯНИЯ ===============
-        
         let currentTopic = 1;
         let currentSubtopic = null;
         let currentQuestionIndex = 0;
@@ -3121,9 +3082,6 @@
         let currentTestQuestionIndex = 0;
         let testAnswers = [];
         let selectedRole = 'student';
-
-        // =============== ВСПОМОГАТЕЛЬНЫЕ ФУНКЦИИ ===============
-
         function showNotification(message, type = 'info') {
             const notification = document.createElement('div');
             notification.className = `notification ${type}`;
@@ -3209,8 +3167,6 @@
                 } else {
                     adminPanel.style.display = 'none';
                 }
-
-                // Показать статистику для студентов
                 if (currentUser.role === 'student') {
                     statsPanel.style.display = 'block';
                     updateStats();
@@ -3218,7 +3174,6 @@
                     statsPanel.style.display = 'none';
                 }
             } else {
-                // Показать кнопки входа/регистрации
                 userSection.innerHTML = `
                     <div class="buttons">
                         <button class="login" onclick="openModal('loginModal')">
